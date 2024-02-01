@@ -21,7 +21,7 @@
     } else {
       // If meta tag is not found, display "User ID not found"
       content.innerHTML = "User ID not found";
-    
+    }
     // content styling
     content.style.padding = "1rem";
 
