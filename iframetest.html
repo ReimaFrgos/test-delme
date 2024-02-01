@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<!-- Display area for User ID -->
+<div id="userIdDisplay"></div>
+
+<script>
+  // Get the meta tag with id attribute as "userId"
+  const metaTag = document.querySelector('meta[id="userId"]');
+  const userIdDisplay = document.getElementById('userIdDisplay');
+
+  // Check if the meta tag with id "userId" exists
+  if (metaTag) {
+    // Extract the value from the content attribute
+    const userId = metaTag.getAttribute('content');
+    
+    // Display the userId in the specified div
+    userIdDisplay.textContent = 'User ID: ' + userId;
+  } else {
+    userIdDisplay.textContent = 'User ID not found';
+  }
+</script>
+
+</body>
+</html>
